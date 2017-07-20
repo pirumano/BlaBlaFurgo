@@ -1,0 +1,192 @@
+.lista-vacia{text-align: center; padding: 20px 0px; font-size: 18px; font-family: AkkuratRegular;}
+
+
+/* Perfil publico */
+
+.publico-content .title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px;}
+.publico-content .title-miperfil .mi{color: #00B0F0;}
+.publico-content .title-miperfil .per{color: red;}
+.publico-content .title-miperfil .fil{color: #96CE30;}
+
+.publico-content .publico-top{font-family: AkkuratRegular; font-weight: 500;margin-top: 50px;}
+.publico-content .publico-top .publico-sobre{margin-bottom: 30px;}
+.publico-content .publico-top label{font-family: AkkuratLight; font-weight: 600; display: block; margin-bottom: 5px;}
+.publico-content .publico-box{border: 3px solid #888; padding: 10px; background-color: #fff;}
+.publico-box-espaciado{
+	margin-bottom: 30px;
+}
+
+
+.publico-content .tabla-anuncios-transportista{width: 100%; margin: 0 auto; margin-bottom: 40px;    margin-top: 50px;}
+.publico-content .tabla-anuncios-transportista .tabs span{float: left;width: 100%;color:white;display: block; text-align: center; background-color: #96CE30; font-family: AkkuratRegular; font-size: 16px; padding: 10px 0; margin-right: 4%; border-top-left-radius: 10px; border-top-right-radius: 10px; cursor: pointer;}
+.publico-content .tabla-anuncios-transportista .tabs span:last-child{margin-right: 0;}
+.publico-content .tabla-anuncios-transportista .tabs span.active{font-weight: 600; position: relative; top: 5px;}
+
+.publico-content .tabla-anuncios-transportista .datos-tabla{padding-top: 30px; border: 1px solid #96CE30; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow-x: scroll;}
+.publico-content .tabla-anuncios-transportista .datos-tabla .leyenda{margin-bottom: 20px;}
+.publico-content .tabla-anuncios-transportista .datos-tabla .leyenda span{font-family: AkkuratRegular; font-size: 15px; display: inline-block; font-weight: 600; vertical-align: top;}
+.publico-content .tabla-anuncios-transportista .datos-tabla .item-anuncio{list-style: none; padding: 10px 0px; padding-left: 5px;}
+.publico-content .tabla-anuncios-transportista .datos-tabla .item-anuncio span{font-family: AkkuratRegular; font-size: 12px; display: inline-block; text-align: center; vertical-align:top; word-wrap: break-word;}
+.publico-content .tabla-anuncios-transportista .datos-tabla .item-anuncio:nth-child(2n){background-color: #A4C8E6;}
+
+
+.publico-content .tabla-anuncios-transportista .ofertas-transportista{display: none;}
+.publico-content .tabla-anuncios-transportista .previos-transportista{display: none;}
+.publico-content .tabla-anuncios-transportista .mensajes-transportista{display: none;}
+
+
+.tabla-transportista {
+    min-width: 940px!important;
+}
+
+
+
+
+.publico-content .tabla-anuncios-porteador{width: 100%; margin: 0 auto; margin-bottom: 40px;    margin-top: 50px;}
+.publico-content .tabla-anuncios-porteador .tabs span{float: left;width: 100%;color:white;display: block; text-align: center; background-color: #96CE30; font-family: AkkuratRegular; font-size: 16px; padding: 10px 0; margin-right: 4%; border-top-left-radius: 10px; border-top-right-radius: 10px; cursor: pointer;}
+.publico-content .tabla-anuncios-porteador .tabs span:last-child{margin-right: 0;}
+.publico-content .tabla-anuncios-porteador .tabs span.active{font-weight: 600; position: relative; top: 5px;}
+
+.publico-content .tabla-anuncios-porteador .datos-tabla{padding-top: 30px; border: 1px solid #96CE30; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow-x: scroll;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .leyenda{margin-bottom: 20px;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .leyenda span{font-family: AkkuratRegular; font-size: 15px; display: inline-block; font-weight: 600; vertical-align: top;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio{list-style: none; padding: 10px 0px; padding-left: 5px;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio span{font-family: AkkuratRegular; font-size: 12px; display: inline-block; text-align: center; vertical-align:top; word-wrap: break-word;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio:nth-child(2n){background-color: #A4C8E6;}
+
+
+.publico-content .tabla-anuncios-porteador .ofertas-transportista{display: none;}
+.publico-content .tabla-anuncios-porteador .previos-transportista{display: none;}
+.publico-content .tabla-anuncios-porteador .mensajes-transportista{display: none;}
+
+.publico-content .content-valorar-publico{text-align: center; padding-top: 30px; font-family: AkkuratRegular; font-size: 20px; color: red;}
+
+
+.tabla-porteador {
+    min-width: 940px!important;
+}
+
+@media (max-width: 767px) {
+	.publico-content .publico-top .publico-vehiculos {
+	    margin-bottom: 30px;
+	}.publico-content{
+	   text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.no-pad-768{padding: 0px !important;}
+	.single-tab{border-bottom: 1px solid #fff;}
+	.perfil-content .tabla-anuncios-transportista .tabs .single-tab.active span{background-color: #fff; border: 1px solid #96CE30;}
+	.perfil-content .tabla-anuncios-transportista .tabs span{border-radius: 10px;}
+	.perfil-content .tabla-anuncios-porteador .tabs .single-tab.active span{background-color: #fff; border: 1px solid #96CE30;}
+	.perfil-content .tabla-anuncios-porteador .tabs span{border-radius: 10px;}  
+}
+
+.perfil-content .tabla-anuncios-transportista .datos-tabla .leyenda span, .perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio span, .publico-content .tabla-anuncios-transportista .datos-tabla .item-anuncio span, .publico-content .tabla-anuncios-transportista .datos-tabla .leyenda span{
+	font-family: AkkuratRegular;
+    width: 11%;
+    text-align: center;
+    font-weight: 600;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+
+.perfil-content .tabla-anuncios-porteador .tabs span{
+	float: left;
+    width: 100%;
+    text-align: center;
+    background-color: #96CE30;
+    color: gray;
+    font-family: AkkuratRegular;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-right: 4%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+.perfil-content .tabla-anuncios-porteador .datos-tabla{
+	overflow-x: scroll;
+}
+
+
+/* DETALLE PORTE */
+
+.porte-detalles-content .title-center,.ruta-detalles-content .title-center{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.porte-detalles-content .main-content .info,.ruta-detalles-content .main-content .info {
+    font-size: 14px;
+}
+
+
+@media (max-width: 767px) {
+	.porte-detalles-content .main-content .left-content,.porte-detalles-content .main-content .right-content,.ruta-detalles-content .main-content .left-content,.ruta-detalles-content .main-content .right-content{
+		text-align: center;
+		font-size: 12px;
+	}
+	.porte-detalles-content .main-content .title,.ruta-detalles-content .main-content .title{
+		display: block;
+	}
+}
+
+/* Perfil Porteador */
+
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span.but-contactar{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer; width: 35%; padding: 3px; margin-right: 5px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span.but-contactar:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+/* Perfil Transportista */
+
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span.but-contactar{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer; width: 35%; padding: 3px; margin-right: 5px; font-weight: 400;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span.but-contactar:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+/* CONTACTAR PERFILES */
+
+.contacto-aceptado-porteador{display: none; position: fixed; background-color: white; padding: 30px 40px; z-index: 9999999; top: 20%; left: 50%; min-width: 350px; font-family: AkkuratRegular; font-size: 18px; border-radius: 10px; -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5); box-shadow: 0 3px 9px rgba(0,0,0,.5); color: #96CE30;}
+.contacto-aceptado-porteador .titulo-contacto{text-align: center; margin-bottom: 40px; font-weight: 600; text-transform: uppercase; font-family: AkkuratLight; font-size: 20px; color: red;}
+.contacto-aceptado-porteador .item-contacto{margin-bottom: 25px; display: block; font-weight: 600;}
+.contacto-aceptado-porteador .item-contacto span{color: #00B0F0;}
+.contacto-aceptado-porteador .close-contacto{cursor: pointer; position: absolute; right: 12px; top: 12px; font-size: 18px; color: red; font-weight: 600;}
+
+.contacto-aceptado-transportista{display: none; position: fixed; background-color: white; padding: 30px 40px; z-index: 9999999; top: 20%; left: 50%; min-width: 350px; font-family: AkkuratRegular; font-size: 18px; border-radius: 10px; -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5); box-shadow: 0 3px 9px rgba(0,0,0,.5); color: #96CE30;}
+.contacto-aceptado-transportista .titulo-contacto{text-align: center; margin-bottom: 40px; font-weight: 600; text-transform: uppercase; font-family: AkkuratLight; font-size: 20px; color: red;}
+.contacto-aceptado-transportista .item-contacto{margin-bottom: 25px; display: block; font-weight: 600;}
+.contacto-aceptado-transportista .item-contacto span{color: #00B0F0;}
+.contacto-aceptado-transportista .close-contacto{cursor: pointer; position: absolute; right: 12px; top: 12px; font-size: 18px; color: red; font-weight: 600;}
+
+
+@media (max-width: 450px) {
+	.contacto-aceptado-porteador{left: 3%;}
+	.contacto-aceptado-transportista{left: 3%;}
+}
+
+/* Contactar detalles */
+
+.but-contact-detalles{text-align: center; margin-bottom: 40px; margin-top: 20px;}
+.but-contact-detalles span.but-contactar{font-family: AkkuratLight; border-radius: 5px; background-color: #1565C0; cursor: pointer; width: 35%; padding: 10px; color: #fff;}
+.but-contact-detalles span.but-contactar:hover{border: 1px solid #ddd; background-color: #fff; color: #1565C0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

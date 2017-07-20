@@ -1,0 +1,269 @@
+/* Pagina Ayuda */
+
+.wrapper-ayuda{
+	min-height: 1000px;
+}
+
+.ayuda-container{
+	width: 100%;
+    padding: 40px 0px;
+    margin: 0 auto;
+    background-image: url('../images/box.jpg');
+    background-position-x: -190px;
+    background-position-y: 200px;
+    background-size: 750px 650px;
+    background-repeat: no-repeat;
+}
+
+.panel-heading-ayuda{
+	background-color: #96CE30 !important;
+	
+}
+.panel-heading-ayuda a,.panel-heading-ayuda2 a{
+	color: transparent;
+	
+}
+.panel-title-ayuda{
+	font-size: 25px;
+	color: white;
+}
+.panel-text{
+	padding: 15px;
+	line-height: 27px;
+	font-family: AkkuratRegular;
+}
+.panel-body-ayuda{
+	background-color: #BAEAFB;
+}
+.panel-heading-ayuda2{
+	background-color: #96CE30 !important;
+	opacity: 0.7;
+}
+.panel-subtitle{
+	font-size: 22px;
+	
+}
+.panel-default{
+	border: none!important;
+}
+.panel-title-ayuda-superior{
+	background-color: transparent;
+    color: #33691E;
+}
+.contacto-ayuda{
+	text-align:center;
+	width:100%;
+	
+}
+.wrapper-contacto-ayuda{
+	border: 4px solid #96CE30;
+	border-radius: 10px;
+	padding: 30px;
+    font-family: AkkuratRegular;
+    font-size: 20px;
+    display: inline-block;
+}
+.wrapper-contacto-ayuda .text{
+    font-weight: 600;
+}
+.wrapper-contacto-ayuda .telefono{
+	position: relative;
+	margin-left: 20px;
+}
+.wrapper-contacto-ayuda .telefono:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -18%;
+    top: -5px;
+    background-image: url('../images/tel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.wrapper-contacto-ayuda span{
+	margin-bottom: 15px;
+	display: block;
+}
+.wrapper-contacto-ayuda .email{
+	position: relative;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	display: block;
+}
+.wrapper-contacto-ayuda .email:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -18%;
+    top: -3px;
+    background-image: url('../images/mail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.ayuda-container .info-medium{width: 100%;}
+.ayuda-container .info-medium .como-enviar{border: 4px solid #FF0000; height: 100px; border-radius: 10px; text-align: center;}
+.ayuda-container .info-medium .como-enviar a{text-decoration: none; font-family: AkkuratRegular; color: #000;}
+.ayuda-container .info-medium .como-enviar img{width: 145px; height: 60px; position: relative; top: 16px;}
+.ayuda-container .info-medium .como-enviar span{font-size: 22px; position: relative; top: -5px;}
+.ayuda-container .info-medium .contacto{border: 4px solid #96CE30; height: 100px; border-radius: 10px; padding: 5px; font-family: AkkuratRegular; font-size: 17px;}
+.ayuda-container .info-medium .contacto span{display: block; margin-bottom: 10px;}
+.ayuda-container .info-medium .contacto .text{margin-left: 60px; font-weight: 600;}
+.ayuda-container .info-medium .contacto .telefono{margin-left: 70px; position: relative;}
+.ayuda-container .info-medium .contacto .telefono:before{content:""; position: absolute; width: 25px; height: 25px; left: -10%; top: -5px; background-image: url('../images/tel.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.ayuda-container .info-medium .contacto a{display: block; margin-left: 70px; text-decoration: none; color: #000; position: relative;}
+.ayuda-container .info-medium .contacto a:before{content:""; position: absolute; width: 30px; height: 30px; left: -10%; top: -3px; background-image: url('../images/mail.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+@media (max-width: 767px) {
+  .ayuda-container .info-medium .como-enviar{
+	  height: none;
+  }
+  .ayuda-container .info-medium .como-enviar span{
+	font-size: 18px;
+	top:0;
+  }
+  
+  .ayuda-container .info-medium .como-enviar img {
+	    width: 145px;
+	    position: relative;
+	    top: 0px;
+	}
+	
+	.ayuda-container .info-medium .contacto {
+	    height: auto;
+	    font-size: 17px;
+	     text-align: center;
+	}
+	.ayuda-container .info-medium .contacto .text {
+	    margin-left: 0px;
+	    font-weight: 600;
+	}
+	.ayuda-container .info-medium .contacto .telefono {
+	    margin-left: 0px;
+	}
+	.ayuda-container .info-medium .contacto .telefono:before {
+	    position: relative;
+	}
+	.ayuda-container .info-medium .contacto a {
+	    margin-left: 0px;
+	}
+	.ayuda-container .info-medium .contacto a:before {
+	    position: relative;
+	}
+}
+
+
+#input-publicar,#input-buscar,#miporte-radio,#shiply-radio,#anyvan-radio,#llevalo-radio,#todos-radio{
+	display: none;
+}
+.fake-div label:before,.container-radios .radios label:before{
+	content: "";
+    display: inline-block;
+    border-radius: 8px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: relative;
+    background-color: white;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+#input-publicar:checked + label:before,#input-buscar:checked + label:before,#miporte-radio:checked + label:before,#shiply-radio:checked + label:before,#anyvan-radio:checked + label:before,#llevalo-radio:checked + label:before,#todos-radio:checked + label:before{
+    content: "\2022";
+    color: #96CE30;
+    font-size: 40px;
+    text-align: center;
+    line-height: 13px;
+}
+
+
+
+/* PAGAR */
+
+.but-pagar-margin,.but-pagado-margin{
+	margin: 0 20px;
+}
+.but-pagar{
+	border: 1px solid #ddd;
+    font-family: AkkuratRegular;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span.but-pagar-margin:hover{
+	margin-left: 20px;
+}
+.but-pagar:hover{
+	background: #fff;
+}
+
+/* RESPONSIVE MENU */
+
+.shoot-menu{position: absolute; right: 30px; font-size: 30px; top: 25px; color: #00B0F0; cursor: pointer; display: none;}
+
+@media (max-width: 991px){
+	.header-container .header-content .datos-container{float: none; width: 100%; text-align: center; padding: 0px;}
+	.header-container .header-content .datos-container a{display: inline-block;}
+	.header-container .header-content .nav-container{width: 100%; display: none; height: auto;}
+	.shoot-menu{display: block;}
+	.header-container .header-content .nav-container ul.menu-principal li{display: block; width: 100%; float:none; text-align: center; height: auto; padding: 5px 0px;}
+	.header-container .header-content .nav-container .submenu-bienvenido{position: static; padding: 5px 0px; right: 0px; top: 0px; display: block; width: 100% !important; border-radius: 0; margin-top: 5px; transition: none;}
+	.header-container .header-content .nav-container .submenu-bienvenido span{display: block; width: 100%;}
+	.container.container-detalles{padding-top: 40px;}
+}
+	
+
+/* Menu elegir realizar porte y rutas */
+
+.overlay.overlay-miperfil .cont-modal .title-realizar{display: block; margin-bottom: 20px; text-transform: uppercase; line-height: 22px; font-family: AkkuratLight;}
+.overlay.overlay-miperfil .cont-modal .item-realizar{padding: 10px 0px; background-color: #fff; border-radius: 10px; margin-bottom: 10px; cursor: pointer; line-height: 20px;}
+.overlay.overlay-miperfil .cont-modal .item-realizar.active{background-color: #96CE30;}
+.overlay.overlay-miperfil .cont-modal .aceptar-realizar{margin-top: 30px;}
+
+.valorar-trans{display: none;}
+.valorar-porteador{display: none;}
+.overlay.overlay-miperfil .title-valorar{display: block; margin-bottom: 10px; text-transform: uppercase; line-height: 22px; font-family: AkkuratLight;}
+.jq-ry-container{margin: 0 auto; padding: 15px 0;}
+
+
+/* Valoraciones pendientes */
+
+.data-pendiente{background-color: #00B0F0; padding: 30px; color: #fff; border-radius: 5px; max-width: 400px; margin: 0 auto; float: none; margin-top: 30px;}
+.data-pendiente span{display: block; padding: 10px 0px;}
+.data-pendiente .valorar-usuario{text-align: center; margin-top: 10px;}
+.data-pendiente button{display: block; margin: 0 auto; margin-top: 20px; border: 0; border-radius: 10px; width: 180px; height: 30px; font-family: AkkuratLight; font-size: 12px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.data-pendiente button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.data-pendiente button:active{font-size: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

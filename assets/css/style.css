@@ -1,0 +1,1275 @@
+@font-face {
+	font-family: AkkuratRegular;
+	src: url('../fonts/AkkuratRegular.otf');
+}
+
+@font-face {
+	font-family: AkkuratLight;
+	src: url('../fonts/AkkuratLight.otf');
+}
+
+@font-face {
+	font-family: Vulpes;
+	src: url('../fonts/Vulpes.ttf');
+}
+
+@font-face {
+  font-family: 'Moderna';
+  src: url('../fonts/Modern-Regular.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/Modern-Regular.woff') format('woff'), 
+       url('../fonts/Modern-Regular.ttf')  format('truetype'), 
+       url('../fonts/Modern-Regular.svg#Modern-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* MENSAJE DE COOKIES */
+
+
+#overbox3 { position: fixed; bottom: 0px; left: 0px; width: 100%; z-index: 999999; display: block; background-color: #eeeeee;}
+#infobox3 { margin: auto; position: relative; top: 0px; width: 100%; text-align:center; padding: 25px 0px;}
+#infobox3 p { font-size:12px; text-align:center; word-spacing: 0px;}
+#infobox3 p a { margin-right:5px; text-decoration: underline;}
+
+
+/* Contenidos Generales */
+
+
+body{background-color: #FFF; background-image: url('../images/box.jpg'); background-position-x: -190px;  background-position-y: 200px; background-size: 750px 650px; background-repeat: no-repeat;}
+.fail{color: red;}
+.no-coincidencias{display: block; text-align: center; font-family: 'Moderna'; font-size: 30px; }
+.relatived{position: relative;}
+input{line-height: normal;}
+.no-hay{display: block; text-align: center; margin-bottom: 10px;}
+.perfil-content form{display: inline;}
+.no-pad-left{padding-left: 0px !important;}
+.no-pad-right{padding-right: 0px !important;}
+.no-pad{padding: 0px !important;}
+.inlined{display: inline-block !important; margin-right: 15px;}
+.datos-tabla{background-color: #fff !important;}
+.result.fail{text-align: center; padding-top: 10px;}
+.container.container-detalles{padding-top: 40px;}
+.recuperar{cursor: pointer; text-transform: uppercase;}
+.recuperar:hover{text-decoration: underline;}
+.cont-modal-recu{display: none;}
+.cont-pago{padding-top: 20px;}
+.ok{color: #96CE30;}
+
+/* Footer */
+
+.no-footer footer{display: none;}
+footer{background-color: #fff; padding: 30px 0px; font-family: AkkuratLight; border-top: 4px solid #00B0F0; margin-top: 20px;}
+.cont-foo{text-align: center;}
+.cont-foo a{margin-right: 20px; color: red; cursor: pointer;}
+.cont-foo a:hover{text-decoration: none !important;}
+.cont-foo a.wm5{color: #96CE30;}
+.cont-foo-right{text-align: right;}
+.cont-foo-right span{color: #000; display: block;}
+
+@media (max-width: 991px){
+	.cont-foo{text-align: center;}
+	.cont-foo-right{text-align: center;}
+	.cont-foo-left{margin-bottom: 20px;}
+}
+
+
+/* Contenido del 'Header' */
+
+
+.header-container{width: 100%;}
+.header-container .header-content{background-color: #FFF; height:80px; border-bottom: 4px solid #00B0F0; margin: 0 20px;}
+.header-container .header-content .datos-container{width: 30%; float: left; display: block; padding: 0px 0px 0px 30px;}
+.header-container .header-content .datos-container a div.img{ width: 270px; height: 76px; padding-bottom: 4px; background-image: url('../images/logo.png'); background-position: center center; background-size: cover;}
+
+.header-container .header-content .nav-container{width: 70%; float: left; display: block; height: 70px;}
+.header-container .header-content .nav-container ul.menu-principal li{display: inline-block; padding-top: 25px; float: right; width: 25%; font-family: 'Moderna'; text-align: center; font-size: 21px; height: 70px; margin-top: 5px;}
+.header-container .header-content .nav-container ul.menu-principal li.online{ border-left: 4px solid #00B0F0;}
+.header-container .header-content .nav-container ul.menu-principal li.li-ayuda{ border-left: 4px solid #FF0000;}
+.header-container .header-content .nav-container ul.menu-principal li.registrate{ border-left: 4px solid #96CE30;}
+.header-container .header-content .nav-container ul.menu-principal li.miperfil{ border-left: 4px solid #96CE30;}
+.header-container .header-content .nav-container ul.menu-principal li.entrar-usuario{background-color: #faffc0; border-left: 4px solid #AAA; position: relative; overflow: visible; z-index: 99999;}
+.header-container .header-content .nav-container ul.menu-principal li a{text-decoration: none;}
+.header-container .header-content .nav-container ul.menu-principal li a.entrar{color: #444;}
+.header-container .header-content .nav-container ul.menu-principal li a.registro{color: #FF0000}
+.header-container .header-content .nav-container ul.menu-principal li a.miperfil{color: #FF0000}
+.header-container .header-content .nav-container ul.menu-principal li a.ayuda{color: #00B0F0;} /* rgba(0, 176, 240, 1) */
+.header-container .header-content .nav-container ul.menu-principal li a.chat{color: #96CE30;}
+.header-container .header-content .nav-container .submenu-bienvenido{background: #00B0F0; position: absolute; top: 20px; padding: 15px 10px; font-family: 'Moderna'; text-align: center; font-size: 24px; right: 20px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.header-container .header-content .nav-container .submenu-bienvenido.active{top: 75px;}
+.header-container .header-content .nav-container .submenu-bienvenido .li-submenu{display: block; cursor: pointer;}
+
+
+
+
+
+
+
+
+
+/* Login */
+
+
+
+.overlay{ position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); top: 0; left: 0; z-index: 1000; display: none; z-index: 99999999999999; }
+.modal-wrapper{ position: absolute; width: 100%;  height: 100%; overflow: auto; padding: 30px 20px 30px 20px; text-align: center;}
+.close-modal-fixed { position: absolute; top: 20px; right: 45px; height: 18px; width: 18px; background: url('../images/close-oferta.png'); cursor: pointer; z-index: 999999999; color: red; font-weight: 600;}
+.modal { width:100%; max-width: 320px; position: relative; background-color: #ffffff; border-radius: 10px; padding: 0 20px; padding-top: 40px; padding-bottom: 20px; text-align: left; display: none; z-index: 999999999;}
+
+.overlay .modal{background-color: #BAEAFB; text-align: center; font-family: AkkuratRegular;}
+.overlay .modal span{display: block; margin: 5px; color: #000; font-weight: 600;}
+.overlay .modal input{display: block; margin: 0 auto; margin-bottom: 15px; border: 0; width: 180px; height: 30px; border-radius: 10px; font-size: 12px; font-family: AkkuratLight; padding-left: 5px;}
+.overlay .modal .reg-text{text-align: left; line-height: 20px;}
+.overlay .modal button{display: block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 180px; height: 30px; font-family: AkkuratLight; font-size: 12px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.overlay .modal button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.overlay .modal button:active{font-size: 10px;}
+.overlay .modal .result{color: red;}
+.overlay .modal .info{text-align: left; font-weight: 500; margin-bottom: 20px;}
+.overlay .modal .registro{color: #000; font-weight: 600; text-transform: uppercase;}
+.overlay .modal .si-no span{width: 50%; float: left; margin: 10px auto; text-align: center; padding-left: 97px;}
+.overlay .modal .si-no input[type=radio]{width: 5%; float: left; position: relative; top: 3px;}
+.overlay .modal-login .cont-record{text-align: center;}
+.overlay .modal-login input.recordarme{display: inline-block; width: 12px; top: 8px; position: relative;}
+.overlay .modal-login label{display: inline-block; margin-right: 5px;}
+
+
+
+
+
+
+
+/* Contenido del 'Home' */
+
+
+
+.home-container{width: 100%; padding: 40px 0px; margin: 0 auto; }
+.home-content{max-width: 990px; width: 100%; margin: 0 auto;}
+.home-container .tabs{position: relative;}
+.home-container .tabs span{cursor: pointer; opacity: 0.5; font-family: AkkuratRegular;text-transform: uppercase;}
+.home-container .tabs .enviar{text-decoration: none; color: white; font-weight: bold; display: inline-block; border-right: 64px solid transparent; border-bottom: 64px solid #96CE30; height: 0; line-height: 102px; font-size: 23px; padding: 15px 90px 15px 60px; position: absolute; width: 110%;}
+.home-container .tabs .transporte{text-decoration: none;color: white;font-weight: bold;display: inline-block;border-left: 64px solid transparent; border-bottom: 64px solid #96CE30; height: 0; line-height: 102px; font-size: 23px; padding: 15px 32px 15px 126px; float: right; width: 112%;}
+
+.home-container .tabs .current{opacity: 1;}
+.home-container .tabs .transporte.current{right:0; bottom: -4px;}
+
+.home-container .main-buscador{padding: 30px 0px; text-align: center; font-family: AkkuratRegular; margin-bottom: 10px; background-color: #BAEAFB; height: auto; border-top: 4px solid #96CE30;}
+
+.home-container .main-buscador .radios div.main{margin-bottom: 20px;}
+.home-container .main-buscador .radios div.fake-div{display: inline-block;}
+.home-container .main-buscador .radios div input{background: green;}
+.home-container .main-buscador .radios div label{font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .especificacion-carga-1{display: none;}
+.home-container .main-buscador .especificacion-carga-2{display: none;}
+.home-container .main-buscador .especificacion-carga-3{display: none;}
+.home-container .main-buscador .especificacion-carga-4{display: none;}
+.home-container .main-buscador .especificacion-carga-5{display: none;}
+.home-container .main-buscador .especificacion .active{display: block;}
+
+.home-container .result-index{text-align: center;}
+.home-container .result-index span{font-family: AkkuratRegular; font-size: 16px; font-weight: 600;}
+.home-container .result-index span.ok{color: #96CE30;}
+.home-container .result-index span.fail{color: red;}
+
+@media (max-width: 991px) {
+	.home-container .tabs .enviar{
+	    display: block;
+	    border-right: none;
+	    line-height: 65px;
+	    font-size: 21px;
+	    padding: 0;
+	    position: relative;
+	    text-align: center;
+	    width: 100%;
+	}
+	.home-container .tabs .transporte {
+	    display: block;
+	    border-left: none;
+	    line-height: 65px;
+	    font-size: 23px;
+	    padding: 0;
+	    text-align: center;
+	    width: 100%;
+	}
+}
+
+
+
+
+/* Buscador principal 'ENVIAR Y PUBLICAR' */
+
+
+
+.home-container .env-publi{display: block;}
+.home-container input.check-publi.check-env-origen,.home-container input.check-publi.check-env-destino{
+	position: relative;
+    top: 10px;
+}
+.home-container .main-buscador label.label-flexible{
+	display: inline-block!important;
+}
+.home-container .main-buscador .env-publi .sitios{margin-bottom: 20px;}
+.home-container .main-buscador .env-publi .sitios label{display: block;margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .env-publi .sitios input{border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .env-publi .sitios .check-publi{width: 15px;}
+.home-container .main-buscador .env-publi .label-flexible{display: inline-block;}
+.home-container .main-buscador .env-publi .sitios div.sitio:before{content:""; position: absolute; width: 35px; height: 35px; right: 69px; top: 20px; background-image: url('../images/chin.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+/* .home-container .main-buscador .env-publi .sitios .flexer{position: absolute; left: 350px;} */
+.home-container .main-buscador .env-publi .sitios .flexer{padding-top: 10px;}
+.home-container .main-buscador .env-publi .sitios .flexer label{font-size: 14px; vertical-align: top;}
+
+.home-container .main-buscador .env-publi .fechas{margin-bottom: 20px;}
+/* .home-container .main-buscador .env-publi .fechas div.inputer{position: relative;} */
+.home-container .main-buscador .env-publi .fechas div.inputer:before{content:""; position: absolute; width: 36px; height: 35px; right: 69px; top: 25px; background-image: url('../images/cal.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.home-container .main-buscador .env-publi .fechas .recogida input{ border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .env-publi .fechas .recogida .check-publi{width: 15px;}
+/* .home-container .main-buscador .env-publi .fechas .recogida .flexer{position: absolute; top: 25px; left: 394px;} */
+.home-container .main-buscador .env-publi .fechas .recogida .flexer{padding-top: 10px;}
+.home-container .main-buscador .env-publi .fechas .recogida .flexer label{font-size: 14px; vertical-align: top; pa}
+.home-container .main-buscador .env-publi .fechas .recogida .flexer input{position: relative; top: -13px}
+.home-container .main-buscador .env-publi .fechas .entrega input{border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .env-publi .fechas .entrega .check-publi{width: 15px;}
+/* .home-container .main-buscador .env-publi .fechas .entrega .flexer{position: absolute; top: 25px; left: 394px;} */
+.home-container .main-buscador .env-publi .fechas .entrega .flexer{padding-top: 10px;}
+.home-container .main-buscador .env-publi .fechas .entrega .flexer label{font-size: 14px; vertical-align: top;}
+.home-container .main-buscador .env-publi .fechas .entrega .flexer input{position: relative; top: -13px}
+.home-container .main-buscador .env-publi .fechas label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .env-publi .fechas .label-entrega{left: -78px;}
+
+.home-container .main-buscador .env-publi .tipo-cargas{margin-bottom: 25px;}
+.home-container .main-buscador .env-publi .tipo-cargas > label{display: block; margin-bottom: 10px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .env-publi .tipo-cargas select{border: 0; width: 220px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight;}
+
+.home-container .main-buscador .env-publi .detalles-carga{margin-bottom: 10px;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones span{font-weight: 600; font-size: 15px; display: block; text-align: center; margin-bottom: 5px;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones span select{width: 50px; border:0; margin-left: 5px;font-family: AkkuratRegular;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones div{position: relative; text-align: center; margin-bottom: 20px;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones input{width: 110px; height: 25px; border: 0; border-radius: 20px; padding-left: 5px; text-align: right;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones .lined{display: inline-block; margin-right: 10px;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones .dimensiones input{margin-right: 10px;}
+.home-container .main-buscador .env-publi .detalles-carga .especificaciones textarea{width: 240px; height: 120px; padding: 5px; font-family: AkkuratLight; font-size: 12px; border: 0; border-radius: 10px;}
+
+.home-container .main-buscador .env-publi .detalles-carga .cont-img{position: relative; padding-top: 140px;}
+.home-container .main-buscador .env-publi .detalles-carga .cont-img input{border-radius: 10px; font-family: AkkuratRegular; font-size: 15px;}
+.home-container .main-buscador .env-publi .detalles-carga .cont-img input[type=file]{display: inline-block;}
+.home-container .main-buscador .env-publi .detalles-carga .cont-img img{position: absolute; width: 120px; height: 120px; top: 0px; right: 50%; margin-right: -60px;}
+.home-container .main-buscador .env-publi .detalles-carga{margin-bottom: 20px;}
+
+.home-container .main-buscador .env-publi .despre{position: relative; margin-bottom: 20px;}
+.home-container .main-buscador .env-publi .descripcion{display: inline-block;}
+.home-container .main-buscador .env-publi .descripcion label{display: block; font-weight: 600; font-size: 15px; margin-bottom: 10px;}
+.home-container .main-buscador .env-publi .descripcion textarea{position: relative; width: 240px; height: 120px; padding: 5px; font-family: AkkuratLight; font-size: 12px; border: 0; border-radius: 10px;}
+.home-container .main-buscador .env-publi .descripcion .count{position:absolute; color: #444; font-size: 11px;}
+
+.home-container .main-buscador .env-publi .email-presupuesto{margin-top: 50px; display: inline-block; width: 50%; float: left;}
+.home-container .main-buscador .env-publi .email-presupuesto label{display: block; font-weight: 600; font-size: 15px; margin-bottom: 5px;}
+.home-container .main-buscador .env-publi .email-presupuesto input{border: 0; width: 220px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+
+.home-container .main-buscador .env-publi .boton-publicar button{display: block; margin: 0 auto; margin-bottom: 5px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.home-container .main-buscador .env-publi .boton-publicar button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.home-container .main-buscador .env-publi .boton-publicar button:active{font-size: 14px;}
+.home-container .main-buscador .env-publi .boton-publicar span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+
+
+@media (max-width: 425px) {
+	.home-container .check-publi{
+		height: auto !important;
+		margin: 20px auto;
+		position: relative!important;
+		top : -18px!important;
+	}
+	.home-container input.check-publi.check-env-destino{
+		position: relative;
+		top : 0px;
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	.home-container .main-buscador .env-publi .sitios div.sitio:before,.home-container .main-buscador .env-publi .fechas div.inputer:before{
+		right: 18px;
+	}
+}
+@media (min-width: 992px){
+	.home-container .main-buscador .env-publi .sitios div.sitio:before,.home-container .main-buscador .env-publi .fechas div.inputer:before{
+		right: 30px;
+	}
+}
+
+
+
+/* Buscador principal 'ENVIAR Y BUSCAR' */
+
+
+
+
+.home-container .enviar-buscar{display: none;}
+
+.home-container .main-buscador .enviar-buscar .sitios{margin-bottom: 20px;}
+.home-container .main-buscador .enviar-buscar .sitios label{display: block;  margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .enviar-buscar .sitios input{ border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;  }
+.home-container .main-buscador .enviar-buscar .sitios div:before{content:""; position: absolute; width: 35px; height: 35px; right: 69px; top: 20px; background-image: url('../images/chin.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+.home-container .main-buscador .enviar-buscar .fechas{margin-bottom: 20px;}
+.home-container .main-buscador .enviar-buscar .fechas div:before{content:""; position: absolute; width: 36px; height: 35px; right: 69px; top: 25px; background-image: url('../images/cal.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.home-container .main-buscador .enviar-buscar .fechas .recogida input{ border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .enviar-buscar .fechas .entrega input{border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .enviar-buscar .fechas label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+
+.home-container .main-buscador .enviar-buscar .tipo-cargas{margin-bottom: 20px;}
+.home-container .main-buscador .enviar-buscar .tipo-cargas > label{display: block; margin-bottom: 10px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .enviar-buscar .tipo-cargas select{border: 0; width: 220px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight;}
+
+.home-container .main-buscador .enviar-buscar .boton-publicar button{display: block; margin: 0 auto; margin-bottom: 5px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.home-container .main-buscador .enviar-buscar .boton-publicar button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.home-container .main-buscador .enviar-buscar .boton-publicar button:active{font-size: 14px;}
+.home-container .main-buscador .enviar-buscar .boton-publicar span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.home-container .main-buscador .enviar-buscar .sitios div:before,.home-container .main-buscador .enviar-buscar .fechas div:before{
+		right: 18px;
+	}
+}
+
+@media (min-width: 992px){
+	.home-container .main-buscador .enviar-buscar .sitios div:before,.home-container .main-buscador .enviar-buscar .fechas div:before{
+		right: 30px;
+	}
+}
+
+
+
+/* Buscador principal 'TRANSPORTAR Y PUBLICAR' */
+
+
+
+
+.home-container .trans-publi{display: none;}
+
+.home-container .main-buscador .trans-publi .sitios{margin-bottom: 20px;}
+.home-container .main-buscador .trans-publi .flexer label{vertical-align: top; padding-top: 10px;}
+/* .home-container .main-buscador .trans-publi .sitios div{display: inline-block; width: 50%; float: left; position: relative;} */
+.home-container .main-buscador .trans-publi .sitios label{display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;}
+.home-container .main-buscador label.label-flexible{
+	    display: inline-block!important;}
+.home-container input.check-publi.check-trans-origen, .home-container input.check-publi.check-trans-destino{
+	position: relative;
+    top: -4px;
+	    }
+.home-container .main-buscador .trans-publi .sitios input{border: 0;
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: AkkuratLight;
+    padding-left: 5px;}
+.home-container .main-buscador .trans-publi .sitios input.destino-input{left: -54px;}
+/* .home-container .main-buscador .trans-publi .sitios .flexer{position: absolute; left: 350px;} */
+.home-container .main-buscador .trans-publi .sitios .flexer label{font-size: 14px;}
+/* .home-container .main-buscador .trans-publi .sitios .flexer input{position: absolute; bottom: -28px; left: -10px;} */
+.home-container .main-buscador .trans-publi .sitios .check-publi{
+	width: 15px;
+}
+.home-container input.check-publi.check-env-origen, .home-container input.check-publi.check-env-destino{ position: relative; top: -13px; }
+.home-container .main-buscador .trans-publi .sitios div.sitio:before{content:""; position: absolute; width: 35px; height: 35px; right: 69px; top: 20px; background-image: url('../images/chin.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+
+.home-container .main-buscador .trans-publi .fechas{margin-bottom: 20px;}
+/* .home-container .main-buscador .trans-publi .fechas div{position: relative;} */
+.home-container .main-buscador .trans-publi .fechas div.inputer:before{content:""; position: absolute; width: 36px; height: 35px; right: 69px; top: 25px; background-image: url('../images/cal.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+/* .home-container .main-buscador .trans-publi .fechas .recogida{width: 50%; float: left;} */
+.home-container .main-buscador .trans-publi .fechas .recogida input{border: 0;
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: AkkuratLight;
+    padding-left: 5px;}
+/* .home-container .main-buscador .trans-publi .fechas .recogida .flexer{position: absolute; top: 25px; left: 394px;} */
+.home-container .main-buscador .trans-publi .fechas .recogida .flexer label{font-size: 14px;}
+.home-container .main-buscador .trans-publi .fechas .recogida .flexer input{position: relative;
+    top: -4px;}
+/* .home-container .main-buscador .trans-publi .fechas .entrega{width: 50%; float: left; position: relative;} */
+.home-container .main-buscador .trans-publi .fechas .entrega input{    border: 0;
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: AkkuratLight;
+    padding-left: 5px;}
+/* .home-container .main-buscador .trans-publi .fechas .entrega .flexer{position: absolute; top: 25px; left: 394px;} */
+.home-container .main-buscador .trans-publi .fechas .entrega .flexer label{font-size: 14px;}
+.home-container .main-buscador .trans-publi .fechas .entrega .flexer input{position: relative;
+    top: 10px;}
+.home-container .main-buscador .trans-publi .fechas label{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;}
+/* .home-container .main-buscador .trans-publi .fechas .label-entrega{left: -78px;} */
+.home-container .main-buscador .trans-publi .fechas .recogida .check-publi{
+	width: 15px;
+}
+.home-container .main-buscador .trans-publi .fechas .entrega .check-publi{
+	width: 15px;
+}
+
+.home-container .main-buscador .trans-publi .vehiculo{margin-bottom: 20px;}
+.home-container .main-buscador .trans-publi .vehiculo ul{}
+.home-container .main-buscador .trans-publi .vehiculo li {display: inline-block; border-radius: 10px; background-color: #96CE30; padding: 5px; margin-left: 5px; margin-bottom: 10px;}
+.home-container .main-buscador .trans-publi .vehiculo li span{display: inline; font-size: 12px; color: #FFF;}
+.home-container .main-buscador .trans-publi .vehiculo li span.cerrar{cursor: pointer; padding-left: 10px; font-size: 14px;}
+.home-container .main-buscador .trans-publi .vehiculo label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .trans-publi .vehiculo select{border: 0; width: 240px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; margin-bottom: 10px;}
+.home-container .main-buscador .trans-publi .vehiculo button{display: block; margin: 0 auto; margin-bottom: 5px; border: 0; border-radius: 10px; width: 240px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer;}
+.home-container .main-buscador .trans-publi .vehiculo button:hover{border: 2px solid #F00; color: #F00; background-color: #FFF;}
+.home-container .main-buscador .trans-publi .vehiculo button:active{font-size: 14px;}
+.home-container .main-buscador .trans-publi .vehiculo span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+.home-container .main-buscador .trans-publi {margin-bottom: 20px;}
+.home-container .main-buscador .trans-publi .presu{width: 100%; display: block; text-align: center; margin-bottom: 20px;}
+.home-container .main-buscador .trans-publi .presu label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px; position: relative;}
+.home-container .main-buscador .trans-publi .presu input{border: 0; width: 240px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px; position: relative;}
+
+.home-container .main-buscador .trans-publi .descripcion{margin-bottom: 20px;}
+.home-container .main-buscador .trans-publi .descripcion label{display: block; font-weight: 600; font-size: 15px; margin-bottom: 10px;}
+.home-container .main-buscador .trans-publi .descripcion textarea{width: 240px; height: 120px; padding: 5px; font-family: AkkuratLight; font-size: 12px; border: 0; border-radius: 10px;}
+.home-container .main-buscador .trans-publi .descripcion .count{color: #444; font-size: 11px; display: block;}
+
+.home-container .main-buscador .trans-publi .boton-publicar button{display: block; margin: 0 auto; margin-bottom: 5px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.home-container .main-buscador .trans-publi .boton-publicar button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.home-container .main-buscador .trans-publi .boton-publicar button:active{font-size: 14px;}
+.home-container .main-buscador .trans-publi .boton-publicar span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.home-container .main-buscador .trans-publi .sitios div:before,.home-container .main-buscador .trans-publi .fechas div:before{
+		right: 18px!important;
+	}
+}
+@media (min-width: 992px){
+	.home-container .main-buscador .trans-publi .sitios div:before,.home-container .main-buscador .trans-publi .fechas div:before{
+		right: 30px!important;
+	}
+}
+
+
+
+
+
+
+
+/* Buscador principal 'TRANSPORTAR Y BUSCAR' */
+
+
+
+.home-container .transportar-buscar{display: none;}
+
+.home-container .main-buscador .transportar-buscar .sitios{margin-bottom: 20px;}
+.home-container .main-buscador .transportar-buscar .sitios label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .transportar-buscar .sitios input{border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .transportar-buscar .sitios div:before{content:""; position: absolute; width: 35px; height: 35px; right: 69px; top: 20px; background-image: url('../images/chin.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+.home-container .main-buscador .transportar-buscar .fechas{margin-bottom: 20px;}
+.home-container .main-buscador .transportar-buscar .fechas div:before{content:""; position: absolute; width: 36px; height: 35px; right: 69px; top: 25px; background-image: url('../images/cal.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+	.home-container .main-buscador .transportar-buscar .fechas .recogida input{border: 0;
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: AkkuratLight;
+    padding-left: 5px;}
+.home-container .main-buscador .transportar-buscar .fechas .entrega input{border: 0; width: 75%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.home-container .main-buscador .transportar-buscar .fechas label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px;}
+
+.home-container .main-buscador .transportar-buscar .tipo-cargas{margin-bottom: 20px;}
+.home-container .main-buscador .transportar-buscar .tipo-cargas > label{display: block; margin-bottom: 10px; font-weight: 600; font-size: 20px;}
+.home-container .main-buscador .transportar-buscar .tipo-cargas select{border: 0; width: 220px; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight;}
+
+.home-container .main-buscador .transportar-buscar .boton-publicar button{display: block; margin: 0 auto; margin-bottom: 5px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #96CE30; cursor: pointer;}
+.home-container .main-buscador .transportar-buscar .boton-publicar button:hover{border: 2px solid #96CE30; color: #96CE30; background-color: #FFF;}
+.home-container .main-buscador .transportar-buscar .boton-publicar button:active{font-size: 14px;}
+.home-container .main-buscador .transportar-buscar .boton-publicar span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.home-container .main-buscador .transportar-buscar .sitios div:before,.home-container .main-buscador .transportar-buscar .fechas div:before{
+		right: 18px;
+	}
+}
+@media (min-width: 992px){
+	.home-container .main-buscador .transportar-buscar .sitios div:before,.home-container .main-buscador .transportar-buscar .fechas div:before{
+		right: 30px;
+	}
+}
+
+
+
+
+
+
+/* Contenido del medio 'Index' */
+
+
+
+.home-container .info-medium{width: 100%;}
+.home-container .info-medium .como-enviar{border: 4px solid #FF0000; height: 100px; border-radius: 10px; text-align: center;}
+.home-container .info-medium .como-enviar a{text-decoration: none; font-family: AkkuratRegular; color: #000;}
+.home-container .info-medium .como-enviar img{width: 145px; height: 60px; position: relative; top: 16px;}
+.home-container .info-medium .como-enviar span{font-size: 22px; position: relative; top: -5px;}
+.home-container .info-medium .contacto{ border: 4px solid #96CE30; height: 100px; border-radius: 10px; padding: 5px; font-family: AkkuratRegular; font-size: 17px;}
+.home-container .info-medium .contacto span{display: block; margin-bottom: 10px;}
+.home-container .info-medium .contacto .text{margin-left: 60px; font-weight: 600;}
+.home-container .info-medium .contacto .telefono{margin-left: 70px; position: relative;}
+.home-container .info-medium .contacto .telefono:before{content:""; position: absolute; width: 25px; height: 25px; left: -10%; top: -5px; background-image: url('../images/tel.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.home-container .info-medium .contacto a{display: block; margin-left: 70px; text-decoration: none; color: #000; position: relative;}
+.home-container .info-medium .contacto a:before{content:""; position: absolute; width: 30px; height: 30px; left: -10%; top: -3px; background-image: url('../images/mail.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+
+
+
+
+
+
+/* Lista Inferior */
+
+
+
+.home-container .list-info .tabs2{position: relative;}
+.home-container .list-info .tabs2 span{cursor: pointer; opacity: 0.5; font-family: AkkuratRegular;text-transform: uppercase;}
+.home-container .list-info .tabs2 .tab-portes{text-decoration: none; color: white; font-weight: bold; display: inline-block; border-right: 64px solid transparent; border-bottom: 64px solid #96CE30; height: 0; line-height: 102px; font-size: 25px; padding: 15px 90px 15px 60px; position: absolute; width: 112%;}
+.home-container .list-info .tabs2 .tab-transportes{text-decoration: none;color: white;font-weight: bold;display: inline-block;border-left: 64px solid transparent; border-bottom: 64px solid #96CE30; height: 0; line-height: 102px; font-size: 25px; padding: 15px 32px 15px 126px; float: right; width: 112%;}
+.home-container .list-info .tabs2 .current{opacity: 1;}
+.home-container .list-info .tabs2 .tab-transportes.current{right:0; bottom: -4px;}
+
+.home-container .list-info .radios div{display: inline;}
+
+.home-container .list-info .lista-transportes{display: none;}
+.home-container .list-info .lista-portes .items-portes .cont-portes{display: none;}
+.home-container .list-info .lista-portes .items-portes .current{display: block;}
+.home-container .list-info .lista-transportes .items-transportes .cont-transportes{display: none;}
+.home-container .list-info .lista-transportes .items-transportes .current{display: block;}
+
+.home-container .list-info .radios div{text-align: center; padding: 30px 0px;}
+.home-container .list-info .radios div label{font-family: AkkuratRegular; font-weight: 600; font-size: 24px;}
+/* .home-container .list-info .radios .cont-radio-miporte{position: relative;} */
+.home-container .list-info .radios .cont-radio-miporte input{margin-right: 15px;}
+.home-container .list-info .radios .cont-radio-miporte img{width: 145px; height: 60px; position: absolute; top: 15px; right:0px;}
+
+.home-container .list-info .main-list{background-color: #fff;}
+.home-container .list-info .main-list .leyenda{background-color: #fff; padding: 20px 0;}
+.home-container .list-info .main-list .leyenda span{font-family: AkkuratRegular; font-size: 18px; display: inline-block; width: 16%; text-align: center; font-weight: 600;}
+
+.home-container .list-info .main-list .items-portes .cont-portes .item-porte{list-style: none; padding: 10px 0px; cursor: pointer;}
+.home-container .list-info .main-list .items-portes .cont-portes .item-porte:hover{margin-left: 10px; opacity: 0.6;}
+.home-container .list-info .main-list .items-portes .cont-portes .item-porte span{font-family: AkkuratRegular; font-size: 16px; display: inline-block; width: 16%; text-align: center; vertical-align:top; word-wrap: break-word;}
+.home-container .list-info .main-list .items-portes .cont-portes .item-porte span.not-show{display: none;}
+.home-container .list-info .main-list .items-portes .cont-portes .item-porte:nth-child(2n+1){background-color: #BAEAFB;}
+
+.home-container .list-info .main-list .items-transportes .cont-transportes .item-ruta{list-style: none; padding: 10px 0px; cursor: pointer;}
+.home-container .list-info .main-list .items-transportes .cont-transportes .item-ruta:hover{margin-left: 10px; opacity: 0.6;}
+.home-container .list-info .main-list .items-transportes .cont-transportes .item-ruta span{font-family: AkkuratRegular; font-size: 16px; display: inline-block; width: 16%; text-align: center; vertical-align:top; }
+.home-container .list-info .main-list .items-transportes .cont-transportes .item-ruta span.not-show{display: none;}
+.home-container .list-info .main-list .items-transportes .cont-transportes .item-ruta:nth-child(2n+1){background-color: #BAEAFB;}
+
+.home-container .list-info .main-list .btn-more{background-color: #fff; padding: 30px 0px; text-align: center;}
+.home-container .list-info .main-list .btn-more span{padding: 7px 10px; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: red; cursor: pointer; font-weight: 600;}
+
+.home-container .list-info .main-list .btn-more span:hover{border: 2px solid red; color: red; background-color: #FFF;}
+.home-container .list-info .main-list .btn-more span:active{font-size: 14px;}
+
+
+.home-container .container-radios,.home-container .list-info .main-list{ overflow-x: scroll;}
+.home-container .list-info .main-list .lista-portes, .home-container .list-info .main-list .lista-transportes{ min-width: 860px; border: 2px solid #96CE30; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+
+.btn-more-trans{display: none;}
+
+@media (max-width: 991px) {
+	.home-container .list-info .tabs2 .tab-portes {
+	    display: block;
+	    border-right: none;
+	    line-height: 65px;
+	    font-size: 21px;
+	    padding: 0;
+	    position: relative;
+	    text-align: center;
+	    width: 100%;
+	    margin-top: 25px;
+	}
+	.home-container .list-info .tabs2 .tab-transportes{
+		display: block;
+	    border-left: none;
+	    line-height: 65px;
+	    font-size: 23px;
+	    padding: 0;
+	    text-align: center;
+	    width: 100%;
+	}
+	.radio-selection{
+		display: block;
+		margin: 0 auto!important;
+		margin-top: 5px!important	;
+		text-align: center;
+	}
+}
+@media (max-width: 768px) {
+	.home-container .list-info .radios div label{
+		font-size: 20px;
+	}
+	.home-container .main-buscador .enviar-buscar .sitios .origen{margin-bottom: 20px;}
+	.home-container .main-buscador .enviar-buscar .sitios .destino{margin-bottom: 10px;}
+	.home-container .main-buscador .enviar-buscar .fechas .recogida{margin-bottom: 20px;}
+	.home-container .main-buscador .enviar-buscar .fechas .entrega{margin-bottom: 10px;}
+	
+	.home-container .main-buscador .transportar-buscar .sitios .origen{margin-bottom: 20px;}
+	.home-container .main-buscador .transportar-buscar .sitios .destino{margin-bottom: 10px;}
+	.home-container .main-buscador .transportar-buscar .fechas .recogida{margin-bottom: 20px;}
+	.home-container .main-buscador .transportar-buscar .fechas .entrega{margin-bottom: 10px;}
+	
+	.home-container .main-buscador .trans-publi .fechas label{display: block !important;}
+
+}
+@media (max-width: 550px) {
+	.home-container .list-info .radios div label{
+		font-size: 15px;
+	}
+	.home-container .list-info .radios .cont-radio-miporte img{
+		width: 80px;
+	}
+}
+@media (max-width: 440px) {
+	.home-container .list-info .radios div label{
+		font-size: 10px;
+	}
+	.home-container .list-info .radios .cont-radio-miporte img{
+		width: 80px;
+	}
+}
+
+
+
+
+/* Calendarios */
+
+
+
+#ui-datepicker-div{background-color: #FFF; padding: 10px; margin-top: 10px; border-radius: 10px; font-family: AkkuratRegular; display: none; opacity: 1; border: 3px solid #96CE30;}
+#ui-datepicker-div a{text-decoration: none; color: #96CE30; margin: 3px;}
+.ui-datepicker-header{margin-bottom: 5px;}
+.ui-datepicker-next{float: right; cursor: pointer;}
+.ui-datepicker-prev{margin-bottom: 5px; cursor: pointer; display: inline-block;}
+.ui-datepicker-calendar span{color: #00B0F0; margin-bottom: 3px;}
+.ui-datepicker-title{color: #FF0000;}
+
+
+
+
+
+
+
+/* Registrate */
+
+
+.registro-container{width: 100%;}
+.registro-content{ padding-top: 80px; padding-bottom: 40px; background-color: #faffc0; margin-top: 20px; border-radius: 10px;}
+.registro-elegir{max-width: 900px; margin-left: auto; margin-right: auto;}
+
+
+.registro-container .elegir-registro{text-align: center;}
+.registro-container .elegir-registro span{display: block; text-align: center; font-family: AkkuratRegular; font-size: 20px; font-weight: 600; text-transform: uppercase; margin-bottom: 40px;}
+.registro-container .elegir-registro button{margin: 10px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: red; cursor: pointer;}
+.registro-container .elegir-registro button:hover{border: 2px solid red; color: red; background-color: #FFF;}
+.registro-container .elegir-registro button:active{font-size: 14px;}
+.registro-container .elegir-registro button.transportista{color: #FFF; background-color: #00B0F0;}
+.registro-container .elegir-registro button.transportista:hover{border: 2px solid #00B0F0; color: #00B0F0; background-color: #FFF;}
+
+.registro-content .registro-porteador .datos-porteador{text-align: center; margin-bottom: 20px;}
+.registro-content .registro-porteador label{display: block; display: block; margin-bottom: 5px; font-weight: 600; font-size: 20px; font-family: AkkuratRegular;}
+.registro-content .registro-porteador input{display: block; margin: 0 auto; border: 0; width: 100%; height: 35px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px;}
+.registro-content .registro-porteador .botonera{text-align: center;}
+.registro-content .registro-porteador .botonera span{margin-bottom: 20px; display: block;}
+.registro-content .registro-porteador button{display: block; margin: 0 auto; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: red; cursor: pointer;}
+.registro-content .registro-porteador button:hover{border: 2px solid red; color: red; background-color: #FFF;}
+.registro-content .registro-porteador button:active{font-size: 14px;}
+
+.registro-content .registro-transportista .info{font-family: AkkuratRegular; background-color: #FFF; padding: 20px;}
+.registro-content .registro-transportista .info > span{display: block; margin-bottom: 30px; text-align: center; color: rgba(255, 0, 0, 1); font-size: 18px;}
+.registro-content .registro-transportista .info label{width:49%; display: inline-block; margin-bottom: 20px; font-weight: 400;}
+.registro-content .registro-transportista .info input[type="text"]{width:49%; display: inline-block; border: 0; max-width: 220px; height: 30px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px; background-color: rgba(0, 176, 240, 0.6); color: #FFF; margin-bottom: 20px;}
+.registro-content .registro-transportista .info input[type="password"]{width:49%; display: inline-block; border: 0; max-width: 220px; height: 30px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; padding-left: 5px; background-color: rgba(0, 176, 240, 0.6); color: #FFF;}
+.registro-content .registro-transportista .info .bloque1{margin-bottom: 30px;}
+.registro-content .registro-transportista .info .bloque2{margin-bottom: 30px;}
+.registro-content .registro-transportista .info .botonera{text-align: center;}
+.registro-content .registro-transportista .info .botonera span{margin-bottom: 20px; display: block;}
+.registro-content .registro-transportista .info .botonera button{ border: 0; border-radius: 10px; width: 220px; height: 30px; font-family: AkkuratRegular; font-size: 15px; font-weight: 600; color: #FFF; background-color: red; cursor: pointer;}
+.registro-content .registro-transportista .info .botonera button:hover{border: 2px solid red; color: red; background-color: #FFF;}
+.registro-content .registro-transportista .info .botonera button:active{font-size: 14px;}
+.registro-content .registro-transportista .info .botonera a{color: #00B0F0;}
+
+.registro-container .registro-transportista .resumen{font-family: AkkuratRegular; background-color: #FFF; padding: 20px;}
+.registro-container .registro-transportista .resumen .title{color: red; font-weight: 600; margin-bottom: 3px;}
+.registro-container .registro-transportista .resumen .descripcion{font-weight: 600; font-size: 15px; margin-bottom: 5px;}
+.registro-container .registro-transportista .resumen span{display: block; text-align: center;}
+.registro-container .registro-transportista .resumen .content{padding: 10px 0; color: gray; font-size: 15px; line-height: 18px;}
+.registro-container .registro-transportista .resumen .content span{text-align: left;}
+.registro-container .registro-transportista .resumen .content .marg{margin-bottom: 10px;}
+.registro-container .registro-transportista .resumen .bloque-pasos{margin-bottom: 25px;}
+
+.registro-container .registro-transportista .paso2 .tipo-transporte span{display: block; font-weight: 600; margin-bottom: 20px;}
+.registro-container .registro-transportista .paso2 .tipo-transporte input[type="checkbox"]{width: 48%;}
+.registro-container .registro-transportista .paso2 .metodos-pago span{display: block; font-weight: 600; margin-bottom: 20px;}
+
+.registro-container .registro-transportista .paso3 .title{font-weight: 600; text-align: center; text-transform: uppercase; font-size: 17px;}
+.registro-container .registro-transportista .paso3 .cont-img{display: block; margin: 5px auto; text-align: center;}
+.registro-container .registro-transportista .paso3 .cont-img img{width: 120px; height: 120px; border-radius: 10px}
+
+.registro-container .registro-transportista .paso3 .cont-imagen .cont-img img{width: 128px; height: 128px; border-radius: 10px;}
+.registro-container .registro-transportista .paso3 .cont-imagen .changer span{font-family: AkkuratRegular; cursor: pointer;}
+
+.registro-container .registro-transportista .paso3 .fake-file{position: relative;}
+.registro-container .registro-transportista .paso3 .fake-file span{cursor: pointer; width: 100%;}
+.registro-container .registro-transportista .paso3 input[type="file"]{ opacity: 0; width: 100%; height: 100%; position: absolute; top: 0; left: 0; cursor: pointer; background: #fff; z-index: 9999;}
+.registro-container .registro-transportista .paso3 .changer{margin-bottom: 15px; text-align: center;}
+
+.registro-container .registro-transportista .paso4 .fianza-cont .text{display: block; margin: 10px 0;}
+.registro-container .registro-transportista .paso4 .fianza-cont input{margin: 10px 5px;}
+.registro-container .registro-transportista .paso4 .result{color: #00B0F0; font-size: 14px; margin-top: 5px;}
+
+.registro-container .registro-transportista .paso4 .save{border: 0; border-radius: 10px; width: 80px; height: 20px; font-family: AkkuratRegular; font-size: 10px; font-weight: 600; color: #FFF; background-color: #00B0F0; cursor: pointer;}
+.registro-container .registro-transportista .paso4 .save:hover{border: 1px solid #00B0F0; color: #00B0F0; background-color: #FFF;}
+.registro-container .registro-transportista .paso4 .save:active{font-size: 9px;}
+
+.registro-container .registro-transportista .paso4 p{padding: 10px 0;}
+.registro-container .registro-transportista .paso4 .main-content{margin-bottom: 30px;}
+.registro-container .registro-transportista .paso4 .botonera a{color: #fff; font-family: AkkuratLight;}
+.registro-container .registro-transportista .paso4 .botonera a:hover{color: red;}
+
+
+@media (max-width: 768px) {
+	.registro-content .registro-transportista .info{
+		margin-top: 30px;
+	}
+}
+
+
+
+
+
+/* Mi Perfil */
+
+
+
+.perfil-container{width: 100%;}
+.perfil-content{width: 100%; margin: 0 auto;}
+.perfil-content .title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px;}
+.perfil-content .title-miperfil .mi{color: #00B0F0;}
+.perfil-content .title-miperfil .per{color: red;}
+.perfil-content .title-miperfil .fil{color: #96CE30;}
+
+.deleter-anuncio{color: red; cursor: pointer; display: inline-block; width: 3%; margin: 0 auto; text-align: center;}
+
+.perfil-content .datos-perfil-porteador{width: 90%; padding: 20px; padding-bottom: 20px; background-color: rgba(0, 176, 240, 0.2); border-radius: 5px; margin: 0 auto; margin-top: 40px; margin-bottom: 40px;}
+
+.perfil-content .datos-perfil-porteador .lefted{float: left;}
+.perfil-content .datos-perfil-porteador .righted{float: right;}
+
+/* .perfil-content .datos-perfil-porteador .cont-imagen{display: block; float: left; width: 20%; position: relative; padding-right: 26px;} */
+.perfil-content .datos-perfil-porteador .cont-imagen .cont-img{}
+.perfil-content .datos-perfil-porteador .cont-imagen .cont-img img{width: 128px; height: 128px; border-radius: 10px;}
+.perfil-content .datos-perfil-porteador .cont-imagen .changer span{font-family: AkkuratRegular; cursor: pointer;}
+
+
+.perfil-content .datos-perfil-porteador .fake-file span{cursor: pointer; width: 100%;}
+.perfil-content .datos-perfil-porteador input[type="file"]{ opacity: 0; width: 45%; height: 100%; position: absolute; top: 0; left: 0; cursor: pointer; background: #fff; z-index: 9999;}
+
+
+/* .perfil-content .datos-perfil-porteador .cont-datos{float:left; width: 80%; margin-bottom: 15px;} */
+.perfil-content .datos-perfil-porteador .cont-datos .informacion{margin-bottom: 40px;}
+.perfil-content .datos-perfil-porteador .cont-datos .opciones .cont-left{margin-bottom: 20px;}
+.perfil-content .datos-perfil-porteador .cont-datos .dato{/* float: left; width: 33%; text-align: left; */ margin-bottom: 15px;}
+.perfil-content .datos-perfil-porteador .cont-datos .dato label{display: block; margin-bottom: 5px; font-weight: 600; /* font-size: 15px; */ font-family: AkkuratRegular;}
+.perfil-content .datos-perfil-porteador .cont-datos .dato input{display: block; border: 0; width: 100%; height: 25px; border-radius: 5px; font-size: 12px; font-family: AkkuratLight; padding-left: 5px;}
+
+
+.perfil-content .datos-perfil-porteador .opciones .title{font-weight: 600; font-size: 12px; font-family: AkkuratLight; margin-bottom: 15px; display: block; position: relative; padding-left: 25px;}
+.perfil-content .datos-perfil-porteador .opciones .title:before{content:""; position: absolute; width: 20px; height: 20px; left: -0px; top: -3px; background-image: url('../images/icono-msg.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.perfil-content .datos-perfil-porteador .opciones .checktext{font-family: AkkuratRegular; font-size: 10px; display: inline;}
+.perfil-content .datos-perfil-porteador .opciones .cont-check{margin-bottom: 5px;}
+/* .perfil-content .datos-perfil-porteador .opciones .cont-left{float: left; width: 50%;} */
+.perfil-content .datos-perfil-porteador .opciones .cont-right{/* float: left; width: 50%; */ /* padding-left: 10px; */}
+.perfil-content .datos-perfil-porteador button{float: right; border: 0; border-radius: 10px; width: 100px; height: 30px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: red; cursor: pointer;}
+.perfil-content .datos-perfil-porteador button:hover{border: 2px solid red; color: red; background-color: #FFF;}
+.perfil-content .datos-perfil-porteador button:active{font-size: 14px;}
+.perfil-content .datos-perfil-porteador .result{font-family: AkkuratLight; font-size: 12px; color: #76AE20;}
+.perfil-content .datos-perfil-porteador .result .fail{color: red;}
+
+.perfil-content .tabla-anuncios-porteador{width: 100%; margin: 0 auto; margin-bottom: 40px;}
+.perfil-content .tabla-anuncios-porteador .tabs span{float: left; width: 22%; text-align: center; background-color: #96CE30; color: gray; font-family: AkkuratRegular; font-size: 16px; padding: 10px 0; margin-right: 4%; border-top-left-radius: 10px; border-top-right-radius: 10px; cursor: pointer;}
+.perfil-content .tabla-anuncios-porteador .tabs span:last-child{margin-right: 0;}
+.perfil-content .tabla-anuncios-porteador .tabs span.active{color: #000; font-weight: 600;}
+
+.perfil-content .tabla-anuncios-porteador .datos-tabla{padding-top: 30px; border: 1px solid #96CE30; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .leyenda{margin-bottom: 20px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .leyenda span{font-family: AkkuratRegular; font-size: 15px; display: inline-block; width: 10%; text-align: center; font-weight: 600; vertical-align: top; padding-left: 5px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .leyenda span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio{list-style: none; padding: 10px 0px; padding-left: 5px; /* cursor: pointer; */}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio:hover{/* margin-left: 10px; */}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio span{font-family: AkkuratRegular; font-size: 12px; display: inline-block; width: 10%; text-align: center; vertical-align:top; word-wrap: break-word;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio:nth-child(2n){background-color: #A4C8E6;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+@media (max-width: 768px) {
+	.perfil-content .cont-imagen{
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+/* Mensajes Porteador */
+.perfil-content .tabla-anuncios-porteador .datos-tabla .mensajes-porteador .leyenda span{width: 15%;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .mensajes-porteador .leyenda span.es-nuevo{width: 5%;}
+
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador{cursor: auto;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador span{width: 15%; display: inline-block;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador span.es-nuevo{width: 5%}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-mensaje-porteador button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+/* Previos Porteador */
+.perfil-content .tabla-anuncios-porteador .datos-tabla .previos-porteador .leyenda span{width: 13%;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido{cursor: auto;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span{width: 13%; display: inline-block;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+/* Enviadas Porteador */
+.perfil-content .tabla-anuncios-porteador .datos-tabla .ofertas-porteador .leyenda span{width: 19%;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido{cursor: auto;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-oferta span{width: 19%; display: inline-block;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido span:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-porteador .datos-tabla .item-anuncio.item-recibido button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+.perfil-content .tabla-anuncios-porteador .ofertas-porteador{display: none;}
+.perfil-content .tabla-anuncios-porteador .previos-porteador{display: none;}
+.perfil-content .tabla-anuncios-porteador .mensajes-porteador{display: none;}
+
+
+
+
+.perfil-content .datos-perfil-transportista{width: 90%; padding: 20px; padding-bottom: 20px; background-color: rgba(0, 176, 240, 0.2); border-radius: 5px; margin: 0 auto; margin-top: 40px; margin-bottom: 40px;}
+
+
+.perfil-content .datos-perfil-transportista .cont-imagen .cont-img{}
+.perfil-content .datos-perfil-transportista .cont-imagen .cont-img img{width: 128px; height: 128px; border-radius: 10px;}
+.perfil-content .datos-perfil-transportista .cont-imagen .changer span{font-family: AkkuratRegular; cursor: pointer;}
+.perfil-content .datos-perfil-transportista .cont-imagen .changer span.left{margin-right: 15px;}
+
+@media (max-width: 991px) and (min-width: 768px){
+	.perfil-content .datos-perfil-transportista .cont-imagen .changer span.left{margin-right: 11px;}
+}
+
+
+.perfil-content .datos-perfil-transportista .fake-file span{cursor: pointer; width: 100%;}
+.perfil-content .datos-perfil-transportista input[type="file"]{ opacity: 0; width: 45%; height: 100%; position: absolute; top: 0; left: 0; cursor: pointer; background: #fff; z-index: 9999;}
+
+
+.perfil-content .datos-perfil-transportista .cont-datos .informacion{margin-bottom: 40px;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato{margin-bottom: 15px;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato label{display: block; margin-bottom: 5px; font-weight: 600; font-size: 15px; font-family: AkkuratRegular;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato input{display: block; border: 0; width: 100%; height: 25px; border-radius: 5px; font-size: 12px; font-family: AkkuratLight; padding-left: 5px; /* max-width: 200px; */}
+.perfil-content .datos-perfil-transportista .cont-datos .dato textarea{display: block; border: 0; width: 100%; height: 80px; border-radius: 5px; font-size: 12px; font-family: AkkuratLight; padding-left: 5px; padding: 5px;margin-bottom: 10px;}
+
+.perfil-content .datos-perfil-transportista .cont-datos .dato.fianza-cont{display: block; width: 100%; margin-bottom: 25px;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato.fianza-cont input{max-width: 200px;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato.fianza-cont .text{font-family: AkkuratRegular; font-weight: 600; font-size: 15px;}
+.perfil-content .datos-perfil-transportista .cont-datos .dato.fianza-cont .value-fianza{font-family: AkkuratRegular; font-weight: 600; font-size: 15px;}
+
+.perfil-content .datos-perfil-transportista .opciones .title{font-weight: 600; font-size: 12px; font-family: AkkuratLight; margin-bottom: 15px; display: block; position: relative; padding-left: 25px;}
+.perfil-content .datos-perfil-transportista .opciones .title:before{content:""; position: absolute; width: 20px; height: 20px; left: -0px; top: -3px; background-image: url('../images/icono-msg.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.perfil-content .datos-perfil-transportista .opciones .checktext{font-family: AkkuratRegular; font-size: 10px;}
+.perfil-content .datos-perfil-transportista .opciones .cont-check{margin-bottom: 5px;}
+
+.perfil-content .datos-perfil-transportista .cont-datos .metodos-pago{margin-bottom: 40px;}
+.perfil-content .datos-perfil-transportista .cont-datos .metodos-pago div{display: inline-block; margin-bottom: 10px;}
+.perfil-content .datos-perfil-transportista .cont-datos .metodos-pago span{font-family: AkkuratRegular; display: block; font-weight: 600; margin-bottom: 20px; font-size: 16px;}
+.perfil-content .datos-perfil-transportista .cont-datos .metodos-pago label{display: inline-block; font-weight: 500; font-size: 15px; font-family: AkkuratRegular;}
+
+.perfil-content .datos-perfil-transportista .vehiculos-perfil li {display: inline-block; border-radius: 10px; background-color: #96CE30; padding: 5px; margin-left: 5px; margin-bottom: 10px;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil li span{display: inline; font-size: 12px; color: #FFF;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil li span.cerrar{cursor: pointer; padding-left: 10px; font-size: 14px;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil label{display: block; margin-bottom: 20px; font-weight: 600; font-size: 16px; font-family: AkkuratRegular; }
+.perfil-content .datos-perfil-transportista .vehiculos-perfil select{border: 0; width: 100%; height: 30px; border-radius: 10px; font-size: 15px; font-family: AkkuratLight; margin-bottom: 10px; display: inline-block; margin-right: 25px; max-width: 200px;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil button{display: inline-block; margin-bottom: 20px; border: 0; border-radius: 10px; width: 100%; min-height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer; max-width: 170px;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil button:hover{border: 2px solid #F00; color: #F00; background-color: #FFF;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil button:active{font-size: 14px;}
+.perfil-content .datos-perfil-transportista .vehiculos-perfil span{display: block; font-size: 10px; font-family: AkkuratLight;}
+
+.perfil-content .datos-perfil-transportista button.guardar-perfil{display: block; border: 0; border-radius: 10px; width: 100%; height: 35px; font-family: AkkuratLight; font-size: 12px; color: #000; background-color: #faffc0; cursor: pointer; position: relative; margin: 15px 0; max-width: 170px;}
+.perfil-content .datos-perfil-transportista button.guardar-perfil:hover{border: 2px solid #faffc0; color: #000; background-color: #fff;}
+.perfil-content .datos-perfil-transportista button.guardar-perfil:active{font-size: 11px;}
+.perfil-content .datos-perfil-transportista button.guardar-perfil.vehiculos-trans{display: inline-block; margin-right: 20px;}
+
+.perfil-content .datos-perfil-transportista button.cargas-modificar{display: inline-block; border: 0; border-radius: 10px; width: 100%; height: 25px; font-family: AkkuratLight; font-size: 12px; color: #fff; background-color: #0B24D3; cursor: pointer; position: relative; margin: 15px 0;}
+.perfil-content .datos-perfil-transportista button.cargas-modificar:hover{border: 2px solid #0B24D3; color: #0B24D3; background-color: #fff;}
+.perfil-content .datos-perfil-transportista button.cargas-modificar:active{font-size: 11px;}
+
+
+.perfil-content .datos-perfil-transportista .result-info{font-family: AkkuratLight; font-size: 12px; color: #76AE20;}
+.perfil-content .datos-perfil-transportista .result-pagos{font-family: AkkuratLight; font-size: 12px; color: #76AE20;}
+.perfil-content .datos-perfil-transportista .result-vehiculos{font-family: AkkuratLight; font-size: 12px; color: #76AE20; margin-bottom: 15px;}
+.perfil-content .datos-perfil-transportista .result-recordar{font-family: AkkuratLight; font-size: 12px; color: red; line-height: 15px;}
+
+.perfil-content .tabla-anuncios-transportista{width: 100%; margin: 0 auto; margin-bottom: 40px;}
+.perfil-content .tabla-anuncios-transportista .tabs span{float: left; width: 100%; text-align: center; background-color: #96CE30; color: gray; font-family: AkkuratRegular; font-size: 16px; padding: 10px 0; margin-right: 4%; border-top-left-radius: 10px; border-top-right-radius: 10px; cursor: pointer;}
+.perfil-content .tabla-anuncios-transportista .tabs span:last-child{margin-right: 0;}
+.perfil-content .tabla-anuncios-transportista .tabs span.active{color: #000; font-weight: 600;}
+
+.perfil-content .tabla-anuncios-transportista .datos-tabla{padding-top: 30px; border: 1px solid #96CE30; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow-x: scroll;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .leyenda{margin-bottom: 20px;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .leyenda span{font-family: AkkuratRegular; width: 100%; text-align: center; font-weight: 600; vertical-align: top; }
+.perfil-content .tabla-anuncios-transportista .datos-tabla .leyenda span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio{list-style: none; padding: 10px 0px; /* padding-left: 5px; */ /* cursor: pointer; */    display: block;
+    min-height: 75px;
+    overflow: hidden;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio:hover{/* margin-left: 10px; */}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio span{font-family: AkkuratRegular; font-size: 12px; width: 100%; text-align: center; vertical-align:top; word-wrap: break-word;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio:nth-child(2n){background-color: #A4C8E6;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+@media (max-width: 768px) {
+	.perfil-content .tabla-anuncios-transportista .tabs span{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+}
+
+
+
+
+
+
+/* Mensajes*/
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista{cursor: auto;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista span{width: 15%; display: inline-block;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista span.es-nuevo{width: 5%}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-mensaje-transportista button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+.perfil-content .tabla-anuncios-transportista .datos-tabla .mensajes-transportista .leyenda span{width: 15%; display: inline-block;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .mensajes-transportista .leyenda span.es-nuevo{width: 5%; display: inline-block;}
+
+/* Previos */
+.perfil-content .tabla-anuncios-transportista .datos-tabla .previos-transportista .leyenda span{width: 16%; display: inline-block;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .previos-transportista .leyenda span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido{cursor: auto;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span{width: 16%; display: inline-block;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span.width-9{width: 9%;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span.width-15{width: 15%;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido span:hover{margin-left: 0px;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-recibido button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+/*Enviadas*/
+.perfil-content .tabla-anuncios-transportista .datos-tabla .ofertas-transportista .leyenda span{width: 19%; display: inline-block;}
+.perfil-content .tabla-anuncios-transportista .datos-tabla .item-anuncio.item-oferta span{width: 19%; display: inline-block;}
+
+.perfil-content .tabla-anuncios-transportista .ofertas-transportista{display: none;}
+.perfil-content .tabla-anuncios-transportista .previos-transportista{display: none;}
+.perfil-content .tabla-anuncios-transportista .mensajes-transportista{display: none;}
+
+
+
+.perfil-container .info-medium{width: 100%;}
+.perfil-container .info-medium .como-enviar{border: 4px solid #FF0000; height: 100px; border-radius: 10px; text-align: center;}
+.perfil-container .info-medium .como-enviar a{text-decoration: none; font-family: AkkuratRegular; color: #000;}
+.perfil-container .info-medium .como-enviar img{width: 145px; height: 60px; position: relative; top: 16px;}
+.perfil-container .info-medium .como-enviar span{font-size: 22px; position: relative; top: -5px;}
+.perfil-container .info-medium .contacto{border: 4px solid #96CE30; height: 100px; border-radius: 10px; padding: 5px; font-family: AkkuratRegular; font-size: 17px;}
+.perfil-container .info-medium .contacto span{display: block; margin-bottom: 10px;}
+.perfil-container .info-medium .contacto .text{margin-left: 60px; font-weight: 600;}
+.perfil-container .info-medium .contacto .telefono{margin-left: 70px; position: relative;}
+.perfil-container .info-medium .contacto .telefono:before{content:""; position: absolute; width: 25px; height: 25px; left: -10%; top: -5px; background-image: url('../images/tel.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.perfil-container .info-medium .contacto a{display: block; margin-left: 70px; text-decoration: none; color: #000; position: relative;}
+.perfil-container .info-medium .contacto a:before{content:""; position: absolute; width: 30px; height: 30px; left: -10%; top: -3px; background-image: url('../images/mail.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+
+
+
+
+
+
+
+/* Como enviar */
+
+
+.comoenviar-container{width: 100%;}
+.comoenviar-content{width: 100%; max-width: 900px; margin: 0 auto; background-color: #FFF; margin-top: 50px; border-radius: 10px; border: 5px solid red;}
+
+.comoenviar-content .como-enviar{text-align: center; margin-bottom: 10px;}
+.comoenviar-content .como-enviar img{width: 145px; height: 60px; position: relative; top: 16px;}
+.comoenviar-content .como-enviar span{font-size: 24px; position: relative; top: -5px;}
+.comoenviar-content .cont-como{float: left; width: 100%; padding: 20px;}
+.comoenviar-content .cont-como .opcion{display: block; float: left; width: 50%; font-family: AkkuratRegular; font-weight: 600; font-size: 18px;}
+.comoenviar-content .cont-pasos{display: block; float: left; width: 50%;}
+.comoenviar-content .cont-pasos .main-span{display: block; padding: 20px; font-family: AkkuratRegular; font-weight: 600;}
+.comoenviar-content .cont-pasos .main-span2{display: block; padding: 20px; padding-left: 0; font-family: AkkuratRegular; font-weight: 600; font-size: 16px;}
+
+
+
+
+
+
+
+
+/* Detalles portes */
+
+
+
+.porte-detalles-container{width: 100%; margin-bottom: 50px;}
+.porte-detalles-content{width: 100%; max-width: 1000px; margin: 0 auto;}
+.porte-detalles-content .title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px; margin-bottom: 15px;}
+
+.porte-detalles-content .title-miperfil .mi{color: #00B0F0;}
+.porte-detalles-content .title-miperfil .per{color: red;}
+.porte-detalles-content .title-miperfil .fil{color: #96CE30;}
+
+.porte-detalles-content .main-container{background-color: #1565C0; padding: 5px; border-radius: 12px;}
+.porte-detalles-content .main-content{padding: 20px 30px; background-color: #EAF9FF; border-radius: 10px;}
+.porte-detalles-content .main-content .title{font-family: AkkuratRegular; font-size: 16px; margin-right: 10px; line-height: 20px;}
+.porte-detalles-content .main-content .info{font-family: AkkuratLight; font-size: 16px; margin-right: 15px; line-height: 21px;}
+.porte-detalles-content .main-content .flexible{font-family: AkkuratRegular; font-size: 14px; text-transform: uppercase;}
+.porte-detalles-content .main-content .title-big{font-size: 20px; display: block; margin-bottom: 15px; font-family: AkkuratRegular; font-weight: 600; text-transform: uppercase;}
+.porte-detalles-content .main-content .container-item{display: block; margin-bottom: 4px;}
+
+#cont-map-porte{width: 100%; height: 500px; margin-bottom: 20px;}
+
+.porte-detalles-content .main-content button{display: block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 100%; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer; max-width: 170px;}
+.porte-detalles-content .main-content button:hover{border: 2px solid #F00; color: #F00; background-color: #FFF;}
+.porte-detalles-content .main-content button:active{font-size: 14px;}
+
+.porte-detalles-content .main-content .img-detalles-porte{width: 300px; height: 145px; /* position: absolute; */ /* left: 50%; margin-left: -150px; */ background-position: center center; background-size: cover;}
+
+
+/* Detalles rutas */
+
+
+
+.ruta-detalles-container{width: 100%;}
+.ruta-detalles-content{width: 100%; max-width: 1000px; margin: 0 auto;}
+.ruta-detalles-content .title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px; margin-bottom: 15px;}
+
+.ruta-detalles-content .title-miperfil .mi{color: #00B0F0;}
+.ruta-detalles-content .title-miperfil .per{color: red;}
+.ruta-detalles-content .title-miperfil .fil{color: #96CE30;}
+
+.ruta-detalles-content .main-container{background-color: #1565C0; padding: 5px; border-radius: 12px;}
+.ruta-detalles-content .main-content{padding: 20px 30px; background-color: #EAF9FF; border-radius: 10px;}
+.ruta-detalles-content .main-content .title{font-family: AkkuratRegular; font-size: 16px; margin-right: 10px; vertical-align: top; line-height: 20px;}
+.ruta-detalles-content .main-content .info{font-family: AkkuratLight; font-size: 16px; line-height: 21px; margin-right: 15px;}
+.ruta-detalles-content .main-content .flexible{font-family: AkkuratRegular; font-size: 14px; text-transform: uppercase;}
+.ruta-detalles-content .main-content .title-big{font-size: 20px; display: block; margin-bottom: 15px; font-family: AkkuratRegular; font-weight: 600; text-transform: uppercase;}
+.ruta-detalles-content .main-content .container-item{display: block; margin-bottom: 4px;}
+.ruta-detalles-content .main-content .left-content{/* float: left; width: 50%; */ margin-bottom: 15px;}
+.ruta-detalles-content .main-content .right-content{/* float: right; width: 50%; */ margin-bottom: 15px;}
+
+.ruta-detalles-content .main-content button{display: block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer;}
+.ruta-detalles-content .main-content button:hover{border: 2px solid #F00; color: #F00; background-color: #FFF;}
+.ruta-detalles-content .main-content button:active{font-size: 14px;}
+
+#cont-map-ruta{width: 100%; height: 500px; margin-bottom: 20px;}
+.logo-vehiculo{width: 90px; height: 60px;}
+
+
+/* Preguntas portes y rutas */
+
+.container-mensajes{margin-bottom: 20px;}
+.title-pregunta{margin-left: 5px; margin-bottom: 5px; font-family: AkkuratLight; font-weight: 600; font-size: 14px;}
+.pregunta{display: block; padding: 10px 5px; background-color: #fff; margin-right: 0px !important; margin-bottom: 5px;}
+.pregunta:last-child{border-bottom: none;}
+.clickable{cursor: pointer;}
+
+.content-mensajes{margin-bottom: 10px; border-radius: 10px; overflow: hidden;}
+.text-pregunta{position: relative; border: 0; height: 75px; border-radius: 10px; font-size: 12px; font-family: AkkuratLight; padding: 5px; display: block; width: 100%; margin-bottom: 15px;}
+.text-presupuesto{height: 35px; padding: 10px; width: 170px; position: relative; margin-bottom: 20px; display: inline-block; margin-right: 30px; }
+.text-presu-carga{max-width: 725px; width: 100%; margin-right: 0;}
+.euro{position: absolute; top: 10px; left: 180px;}
+.form-presu{position: relative;}
+.cantidad-presu{margin-right: 30px !important;}
+
+.cont-respuestas-hechas{padding-left: 20px;}
+.title-respuesta{margin-bottom: 5px; display: inline-block;}
+.respuesta-hecha{display: block; padding: 10px 5px; background-color: #fafafa; margin-right: 0px; margin-bottom: 5px; margin-right: 10px;}
+
+.cont-respuesta{display: none; margin-left: 25px;}
+.respuesta{display: inline-block; width: 80%; padding: 5px; background-color: #fff; margin-right: 5%; border: 1px solid #fafafa; border-radius: 5px; margin-top: 10px;}
+
+
+.porte-detalles-content .main-content .cont-respuesta button{display: inline-block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 10%; height: 25px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer;}
+.ruta-detalles-content .main-content .cont-respuesta button{display: inline-block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 10%; height: 25px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer;}
+
+/* Filtros */
+
+
+.main-filtros{width: 100%; max-width: 1000px; margin: 0 auto; margin-bottom: 40px;}
+.lista-transportes.lista-filtros{display: block;}
+
+.title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px;}
+.title-miperfil .mi{color: #00B0F0;}
+.title-miperfil .per{color: red;}
+.title-miperfil .fil{color: #96CE30;}
+
+.main-filtros .items-portes .cont-portes{display: block;}
+.main-filtros .lista-transportes .items-transportes .cont-transportes{ background-color: #BAEAFB;}
+
+.main-filtros{margin-top: 30px;}
+.main-filtros .leyenda{padding: 20px 0px; background-color: #faffc0;}
+.main-filtros .leyenda span{font-family: AkkuratRegular; font-size: 18px; display: inline-block; width: 16%; text-align: center; font-weight: 600;}
+
+.main-filtros .items-portes .cont-portes .item-porte{list-style: none; padding: 10px 0px; cursor: pointer;  background-color: #BAEAFB;}
+.main-filtros .items-portes .cont-portes .item-porte:hover{margin-left: 10px; opacity: 0.6;}
+.main-filtros .items-portes .cont-portes .item-porte span{font-family: AkkuratRegular; font-size: 16px; display: inline-block; width: 16%; text-align: center; vertical-align: top; word-wrap: break-word;}
+.main-filtros .items-portes .cont-portes .item-porte span.not-show{display: none;}
+.main-filtros .items-portes .cont-portes .item-porte:nth-child(2n+1){background-color: #A4C8E6;}
+
+.main-filtros .items-transportes .cont-transportes .item-ruta{list-style: none; padding: 10px 0px; cursor: pointer;}
+.main-filtros .items-transportes .cont-transportes .item-ruta:hover{margin-left: 10px; opacity: 0.6;}
+.main-filtros .items-transportes .cont-transportes .item-ruta span{font-family: AkkuratRegular; font-size: 16px; display: inline-block; width: 16%; text-align: center; vertical-align:top; }
+.main-filtros .items-transportes .cont-transportes .item-ruta span.not-show{display: none;}
+.main-filtros .items-transportes .cont-transportes .item-ruta:nth-child(2n+1){background-color: #A4C8E6;}
+
+
+.filtro-como-container{width: 100%; max-width: 1000px; margin: 0 auto;}
+.filtro-como-container .info-medium{width: 100%;}
+.filtro-como-container .info-medium .como-enviar{border: 4px solid #FF0000; width: 45%; float: left; height: 100px; border-radius: 10px; text-align: center;}
+.filtro-como-container .info-medium .como-enviar a{text-decoration: none; font-family: AkkuratRegular; color: #000;}
+.filtro-como-container .info-medium .como-enviar img{width: 145px; height: 60px; position: relative; top: 16px;}
+.filtro-como-container .info-medium .como-enviar span{font-size: 22px; position: relative; top: -5px;}
+.filtro-como-container .info-medium .contacto{width: 45%; float: right; border: 4px solid #96CE30; height: 100px; border-radius: 10px; padding: 5px; font-family: AkkuratRegular; font-size: 17px;}
+.filtro-como-container .info-medium .contacto span{display: block; margin-bottom: 10px;}
+.filtro-como-container .info-medium .contacto .text{margin-left: 60px; font-weight: 600;}
+.filtro-como-container .info-medium .contacto .telefono{margin-left: 70px; position: relative;}
+.filtro-como-container .info-medium .contacto .telefono:before{content:""; position: absolute; width: 25px; height: 25px; left: -10%; top: -5px; background-image: url('../images/tel.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.filtro-como-container .info-medium .contacto a{display: block; margin-left: 70px; text-decoration: none; color: #000; position: relative;}
+.filtro-como-container .info-medium .contacto a:before{content:""; position: absolute; width: 30px; height: 30px; left: -10%; top: -3px; background-image: url('../images/mail.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;}
+
+
+
+
+/* Modificar cargas */
+
+
+.modificar-container{width: 100%;}
+.modificar-content{width: 100%; max-width: 900px; margin: 0 auto;}
+
+.modificar-content .title-miperfil{text-align: center; display: block; margin-top: 40px; font-family: AkkuratRegular; font-size: 40px;}
+.modificar-content .title-miperfil .mi{color: #00B0F0;}
+.modificar-content .title-miperfil .per{color: red;}
+.modificar-content .title-miperfil .fil{color: #96CE30;}
+
+.modificar-content .lista-vehiculos{padding: 20px; padding-bottom: 20px; background-color: rgba(0, 176, 240, 0.2); border-radius: 5px; margin: 0 auto; margin-top: 40px; margin-bottom: 40px;}
+.modificar-content .lista-vehiculos label{font-family: AkkuratRegular; font-size: 14px; display: inline-block;}
+.modificar-content .lista-vehiculos .title{font-family: AkkuratLight; font-weight: 600; font-size: 16px; display: block; text-align: center; margin-bottom: 20px;}
+.modificar-content .lista-vehiculos .cargasOK {margin-bottom: 25px;}
+.modificar-content .lista-vehiculos .cargasOK div{display: inline-block; margin-bottom: 15px;}
+
+.modificar-content .lista-vehiculos button{display: block; margin: 0 auto; margin-bottom: 20px; border: 0; border-radius: 10px; width: 220px; height: 35px; font-family: AkkuratLight; font-size: 15px; color: #FFF; background-color: #F00; cursor: pointer;}
+.modificar-content .lista-vehiculos button:hover{border: 2px solid #F00; color: #F00; background-color: #FFF;}
+.modificar-content .lista-vehiculos button:active{font-size: 14px;}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .info-medium .como-enviar{
+	  height: none !important;
+	  margin-bottom: 20px;
+  }
+  .info-medium .como-enviar span{
+	font-size: 18px!important;
+	top:0!important;
+  }
+  
+  .info-medium .como-enviar img {
+	    width: 145px!important;
+	    position: relative!important;
+	    top: 22px!important;
+	}
+	
+	.info-medium .contacto {
+	    height: auto!important;
+	    font-size: 17px!important;
+	     text-align: center!important;
+	}
+	.info-medium .contacto .text {
+	    margin-left: 0px!important;
+	    font-weight: 600!important;
+	}
+	.info-medium .contacto .telefono {
+	    margin-left: 0px!important;
+	}
+	.info-medium .contacto .telefono:before {
+	    position: relative!important;
+	}
+	.info-medium .contacto a {
+	    margin-left: 0px!important;
+	}
+	.info-medium .contacto a:before {
+	    position: relative!important;
+	}
+	div.sitio:before,div.inputer:before,div:before{
+		position: relative!important;
+	}
+	
+}
+
+
+/* Publico */
+
+.publico-content .tabla-anuncios-transportista .datos-tabla span.width-9{width: 9% !important;}
+
+.publico-content .tabla-anuncios-porteador .datos-tabla{padding-top: 30px; border: 1px solid #96CE30; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .leyenda{margin-bottom: 20px;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .leyenda span{font-family: AkkuratRegular; font-size: 15px; display: inline-block; width: 11%; text-align: center; font-weight: 600; vertical-align: top; padding-left: 5px;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .leyenda span.width-9{width: 7%;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio{list-style: none; padding: 10px 0px; padding-left: 5px; /* cursor: pointer; */}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio:hover{/* margin-left: 10px; */}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio span{font-family: AkkuratRegular; font-size: 12px; display: inline-block; width: 11%; text-align: center; vertical-align:top; word-wrap: break-word;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio span.width-9{width: 7%;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio:nth-child(2n){background-color: #A4C8E6;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio button{border: 1px solid #ddd; font-family: AkkuratRegular; border-radius: 5px; background-color: #ddd; cursor: pointer;}
+.publico-content .tabla-anuncios-porteador .datos-tabla .item-anuncio button:hover{border: 1px solid #ddd; background-color: #fff;}
+
+
+/* Legal */
+
+
+.legal-container{width: 100%; background-color: #fff;}
+.legal-content{width: 100%; max-width: 940px; margin: 0 auto; padding: 0px 20px; padding-top: 50px;}
+
+.legal-content div{margin-bottom: 40px;}
+.legal-content .title{display: block; text-align: center; margin-bottom: 15px; font-family: AkkuratRegular; font-weight: 600; font-size: 18px;}
+.legal-content p{font-family: AkkuratLight; font-size: 15px; line-height: 20px; margin-bottom: 20px;}
+
